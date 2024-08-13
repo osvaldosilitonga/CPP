@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build with G++ 14.1.0",
+			"command": "C:\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"-std=c++23",
+				"${workspaceFolder}\\*.cpp",
+				"-o",
+				"${fileDirname}\\app.exe"  // executable file name
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
